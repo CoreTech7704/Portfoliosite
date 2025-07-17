@@ -68,7 +68,7 @@ const ProjectCard = () => {
       </div>
 
       {/* Project List */}
-      <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col gap-10 px-4 lg:px-20">
         {projects.map((project) => (
           <div
             key={project.id}
