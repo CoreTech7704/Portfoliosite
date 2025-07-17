@@ -1,7 +1,7 @@
 const About = () => {
   const skills = [
     "HTML", "CSS", "JavaScript", "SQL", "React", "Vite", "Tailwind CSS",
-    "Java", "C", "Node.js", "SEO", "C++", "Python", "Git", "GitHub", "Bootstrap"
+    "Java", "C", "Node.js", "SEO", "C++", "API", "Python", "Git", "GitHub", "Bootstrap"
   ];
 
   const softSkills = [
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-20 bg-zinc-950 text-white flex flex-col items-center"
+      className="min-h-screen px-6 py-15 bg-zinc-950 text-white flex flex-col items-center"
     >
       {/* Section Title with underline */}
       <div className="text-center mb-16">

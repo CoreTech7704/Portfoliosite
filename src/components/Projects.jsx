@@ -11,41 +11,41 @@ const ProjectCard = () => {
       id: 1,
       title: "Swift News",
       description: "A modern React-based news app with live data and category filtering.",
-      techStack: ["React", "Tailwind CSS", "GNews API"],
+      techStack: ["React", "Tailwind CSS", "HTML", "JavaScript", "GNews API"],
       url: "https://swiftnews.netlify.app/",
       image: SwiftNewsImage,
       goals:
-        "Swift News was developed to deliver real-time news updates with a clean UI. The goal was to build a responsive, accessible site using modern frontend tools like React, Tailwind CSS, and APIs.",
+        "A dynamic and responsive news application built with React and Tailwind CSS. It fetches real-time headlines from GNews API and allows users to filter news by category with smooth transitions and a clean dark UI.",
     },
     {
       id: 2,
       title: "Snap News",
       description: "A Bootstrap-based news website featuring real-time API data and category-wise sorting.",
-      techStack: ["React", "Bootstrap", "GNews API"],
+      techStack: ["React", "Bootstrap", "HTML", "JavaScript", "GNews API"],
       url: "https://snapnews-bootstrap.netlify.app/",
       image: SnapNewsImage,
       goals:
-        "Snap News was my first full React project, focused on handling API calls, state management and building category filters with Bootstrap.",
+        "A lightweight news platform developed using React and Bootstrap. It integrates GNews API to fetch real-time news updates and features category-based filtering, laying the foundation for understanding API handling and responsive design.",
     },
     {
       id: 3,
       title: "TextUtils",
       description: "A simple React-based text editor with light/dark mode and text manipulation tools.",
-      techStack: ["React", "Bootstrap"],
+      techStack: ["React", "HTML", "JavaScript", "Tailwind CSS"],
       url: "https://textutils-fast.netlify.app/",
       image: TextUtilsImage,
       goals:
-        "TextUtils was built to explore text-based transformations like uppercase, lowercase, clear, copy, and count analysis.",
+        "A powerful text utility tool built with React for performing transformations like case conversion, word/character count, and copy/clear functions. Includes a toggleable light/dark mode and responsive design using Tailwind CSS.",
     },
     {
       id: 4,
       title: "DES Algorithm Visualizer",
-      description: "A pure HTML/CSS/JS project that visually explains the DES encryption algorithm.",
-      techStack: ["HTML", "CSS", "JavaScript"],
+      description: "A pure C language project that explains the DES encryption algorithm.",
+      techStack: ["C"],
       url: "https://coretech7704.github.io/DES-Algorithm/",
       image: DESImage,
       goals:
-        "The goal of this project was to understand the Data Encryption Standard and build a working simulation of the key expansion, permutation, and encryption process.",
+        "A C-based simulation of the Data Encryption Standard (DES) algorithm, showcasing key scheduling, permutation tables, and block-level encryption steps ideal for understanding low-level cryptographic logic and bitwise operations.",
     },
     {
       id: 5,
@@ -55,12 +55,12 @@ const ProjectCard = () => {
       url: "#",
       image: PariAgencyImage,
       goals:
-        "The project was developed for a local travel agency with a custom design and layout. It improved my layout, form handling, and responsive web design skills.",
+        "A fully responsive static website created for a real-world travel agency client. Features a custom UI, multi-section layout, and working contact form developed using only HTML, CSS, and vanilla JavaScript.",
     },
   ];
 
   return (
-    <>
+    <div id="projects" className="py-15">
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-5xl font-bold mb-4">Projects</h2>
@@ -68,7 +68,7 @@ const ProjectCard = () => {
       </div>
 
       {/* Project List */}
-      <div className="flex flex-col gap-10 px-4 lg:px-20">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10 px-4 lg:px-20">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -104,22 +104,22 @@ const ProjectCard = () => {
               </div>
 
               {/* Right - Image & Overlay */}
-              <div className="relative w-full h-100 lg:w-2/3 group">
+              <div className="relative w-full h-120 lg:w-2/3 group">
                 <img
                   src={project.image}
                   alt={`${project.title} Screenshot`}
                   className="w-full h-full object-cover transition duration-500 group-hover:blur-sm"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
-                  <h4 className="text-xl font-semibold text-purple-300 mb-2">Description & Goals</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">{project.goals}</p>
+                  <h4 className="text-3xl font-semibold text-purple-300 mb-2">Description & Goals</h4>
+                  <p className="text-gray-300 text-lg leading-relaxed">{project.goals}</p>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
