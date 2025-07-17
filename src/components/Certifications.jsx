@@ -41,10 +41,11 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section className="px-4 md:px-20 mt-24" id="certifications">
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">
-        Certifications
-      </h2>
+    <section className="max-w-6xl mx-auto px-4 md:px-20 mt-24" id="certifications">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold mb-4">Certifications</h2>
+        <div className="h-1 w-55 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full mt-2 mx-auto" />
+      </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {certifications.map((cert) => (
           <div
