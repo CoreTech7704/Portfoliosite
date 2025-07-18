@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-15 bg-zinc-950 text-white flex flex-col items-center"
+      className="min-h-screen px-6 py-15 text-white flex flex-col items-center bg-zinc-950/80 backdrop-blur-md"
     >
       {/* Section Title with underline */}
       <div className="text-center mb-16">
@@ -25,7 +25,7 @@ const About = () => {
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left side */}
         <div>
-          <h3 className="text-3xl font-semibold text-purple-400">
+          <h3 className="text-3xl mb-2 font-semibold text-purple-400">
             Get to know me better
           </h3>
           <p className="text-gray-300 mb-6 text-lg md:text-xl leading-relaxed">

@@ -1,12 +1,28 @@
-import { ChevronDown, ArrowDownCircle, MousePointerClick } from "lucide-react";
+import Particles from "./Particles";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center bg-zinc-950 text-white"
-    >
-      <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold mb-6 leading-tight">
+      className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center text-white"
+    > 
+      {/* Particle Background */}
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={['#ffffff', '#ffffff']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+
+      {/* Hero Content */}
+      <div>
+        <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold mb-6 leading-tight">
         Hey, I'm Sarvam
       </h1>
 
@@ -42,6 +58,7 @@ const Hero = () => {
             />
           </svg>
         </a>
+      </div>
       </div>
     </section>
   );
