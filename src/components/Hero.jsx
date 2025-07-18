@@ -17,10 +17,25 @@ const Hero = () => {
 
       <a
         href="#about"
-        className="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition"
+        className="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transform transition-transform duration-200 ease-out hover:-translate-y-1"
       >
         About Me
       </a>
+
+      {/* Scroll Down indicator */}
+      <div className="absolute bottom-6 animate-bounce"> 
+        <a href="#about" aria-label="Scroll down">
+          <svg
+            className="w-6 h-6 text-purple-500 hover:text-purple-500 transition"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
     </section>
   );
 };

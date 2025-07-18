@@ -19,7 +19,7 @@ const Footer = () => {
           <p className="mt-2">
             Inspired by{" "}
             <a
-              href="https://example.com" // Replace with real inspiration
+              href="https://www.rammaheshwari.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-400 hover:underline"

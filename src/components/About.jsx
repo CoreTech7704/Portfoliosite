@@ -1,6 +1,6 @@
 const About = () => {
   const skills = [
-    "HTML", "CSS", "JavaScript", "SQL", "React", "Vite", "Tailwind CSS",
+    "HTML", "CSS", "JavaScript", "PHP", "SQL", "React", "Vite", "Tailwind CSS",
     "Java", "C", "Node.js", "SEO", "C++", "API", "Python", "Git", "GitHub", "Bootstrap"
   ];
 
@@ -25,19 +25,19 @@ const About = () => {
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left side */}
         <div>
-          <h3 className="text-3xl font-semibold text-purple-400 mb-4">
+          <h3 className="text-3xl font-semibold text-purple-400">
             Get to know me better
           </h3>
           <p className="text-gray-300 mb-6 text-lg md:text-xl leading-relaxed">
-            I'm <span className="font-bold text-white">Sarvam Patel</span>, a passionate front-end web developer dedicated to building fast, responsive, and interactive websites. 
-            I love solving real-world problems and bringing ideas to life using modern technologies like <span className="text-purple-400">React</span>, <span className="text-purple-400">JavaScript</span>, and <span className="text-purple-400">Tailwind CSS</span>.
-            <br />
-            <br />
-            My long-term vision is to become a <span className="text-purple-400 font-semibold">skilled full-stack developer</span>, mastering both front-end and back-end development to build complete, scalable web applications.
+            I'm <span className="font-bold text-white">Sarvam Patel</span>, a front-end web developer passionate about creating fast, responsive, and accessible websites. I specialize in building user-friendly digital experiences using modern technologies like <span className="text-purple-400">React</span>, <span className="text-purple-400">JavaScript</span>, and <span className="text-purple-400">Tailwind CSS</span>.
+            <br /><br />
+            I enjoy solving real-world problems through clean and efficient code, turning ideas into functional products. My projects reflect my commitment to performance, design, and scalability.
+            <br /><br />
+            I'm actively seeking <span className="text-purple-400 font-medium">job opportunities</span> where I can grow, collaborate, and contribute to impactful teams. If you’re hiring or know of a good fit, feel free to <a href="#contact" className="underline text-purple-400 hover:text-purple-500">reach out</a>.
           </p>
           <a
             href="#projects"
-            className="inline-block px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transition"
+            className="inline-block px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-md transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg"
           >
             My Projects
           </a>

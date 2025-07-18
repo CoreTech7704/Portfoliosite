@@ -97,7 +97,7 @@ const ProjectCard = () => {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto w-34 px-3 py-2 inline-flex items-center gap-1 text-white bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transition"
+                  className="mt-auto w-34 px-3 py-2 inline-flex items-center gap-1 text-white bg-purple-600 hover:bg-purple-700 rounded-md font-semibold transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg"
                 >
                   Check it out <ArrowRight size={18} />
                 </a>
