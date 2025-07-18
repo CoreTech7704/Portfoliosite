@@ -104,15 +104,28 @@ const ProjectCard = () => {
               </div>
 
               {/* Right - Image & Overlay */}
-              <div className="relative w-full h-120 lg:w-2/3 group">
+              <div className="relative w-full lg:w-2/3 group">
+                {/* Image */}
                 <img
                   src={project.image}
                   alt={`${project.title} Screenshot`}
-                  className="w-full h-full object-cover transition duration-500 group-hover:blur-sm"
+                  className="w-full h-110 lg:h-110 object-cover transition duration-500 lg:group-hover:blur-sm"
                 />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-center">
-                  <h4 className="text-3xl font-semibold text-purple-300 mb-2">Description & Goals</h4>
+
+                {/* Hover Description - only for desktop */}
+                <div className="hidden lg:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex-col justify-center">
+                  <h4 className="text-3xl font-semibold text-purple-300 mb-2">
+                    Description & Goals
+                  </h4>
                   <p className="text-gray-300 text-lg leading-relaxed">{project.goals}</p>
+                </div>
+
+                {/* Static Description - only for mobile */}
+                <div className="block lg:hidden bg-zinc-800 p-4">
+                  <h4 className="text-xl font-semibold text-purple-400 mb-2">
+                    Description & Goals
+                  </h4>
+                  <p className="text-gray-300 text-base leading-relaxed">{project.goals}</p>
                 </div>
               </div>
             </div>
