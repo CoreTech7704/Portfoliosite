@@ -1,3 +1,5 @@
+import { MapPin, Phone, Mail, GithubIcon, LinkedinIcon } from 'lucide-react';
+
 const Contact = () => {
   return (
     <section id="contact" className="py-15 px-4 text-white bg-[#0f0f0f]">
@@ -12,15 +14,58 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Contact Info */}
         <div className="space-y-6 bg-[#1a1a1a] p-8 rounded-2xl ring-1 ring-purple-500 shadow-md">
-          <h3 className="text-2xl font-semibold text-purple-400">📬 Contact Information</h3>
-          <p className="text-gray-300">Reach me directly via the info below:</p>
-          <div className="space-y-3 text-gray-300">
-            <p><span className="font-semibold">📍 Location:</span> Bharuch, Gujarat, India</p>
-            <p><span className="font-semibold">📞 Phone:</span> +91 9638309943</p>
-            <p><span className="font-semibold">📧 Email:</span> <a href="mailto:sarvampatel953@gmail.com" className="text-blue-400 hover:underline">sarvampatel953@gmail.com</a></p>
-            <p><span className="font-semibold">🔗 GitHub:</span> <a href="https://github.com/CoreTech7704" target="_blank" className="text-blue-400 hover:underline">CoreTech7704</a></p>
-            <p><span className="font-semibold">🔗 LinkedIn:</span> <a href="https://linkedin.com/in/sarvam-patel" target="_blank" className="text-blue-400 hover:underline">Sarvam Patel</a></p>
-          </div>
+            <h3 className="text-2xl font-semibold text-purple-400">Contact Information</h3>
+              <p className="text-gray-300">
+                Feel free to reach out through any of the platforms below!
+              </p>
+              
+              <div className="space-y-4 text-sm text-gray-300">
+                <div className="flex items-start gap-2">
+                  <MapPin size={18} className="mt-1 text-purple-500" />
+                  <div>
+                    <span className="font-semibold text-white">Location</span><br />
+                    Ankleshwar, Gujarat, India
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2">
+                  <Phone size={18} className="mt-1 text-purple-500" />
+                  <div>
+                    <span className="font-semibold text-white">Phone</span><br />
+                    +91 9638309943
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2">
+                  <Mail size={18} className="mt-1 text-purple-500" />
+                  <div>
+                    <span className="font-semibold text-white">Email</span><br />
+                    <a href="mailto:sarvampatel953@gmail.com" className="hover:underline text-blue-400">
+                      sarvampatel953@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2">
+                  <GithubIcon size={18} className="mt-1 text-purple-500" />
+                  <div>
+                    <span className="font-semibold text-white">GitHub</span><br />
+                    <a href="https://github.com/CoreTech7704" target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-400">
+                      CoreTech7704
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2">
+                  <LinkedinIcon size={18} className="mt-1 text-purple-500" />
+                  <div>
+                    <span className="font-semibold text-white">LinkedIn</span><br />
+                    <a href="https://linkedin.com/in/sarvam-patel" target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-400">
+                      Sarvam Patel
+                    </a>
+                  </div>
+                </div>
+              </div>
         </div>
 
         {/* Contact Form */}
