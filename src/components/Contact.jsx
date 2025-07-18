@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row md:justify-between gap-12">
         {/* Left Side - Contact Info */}
         <div className="md:w-1/2 space-y-6">
-          <h3 className="text-2xl font-semibold text-blue-400">Contact Information</h3>
+          <h3 className="text-2xl font-semibold text-purple-400">Contact Information</h3>
           <p className="text-gray-300">
             Feel free to reach out through any of the platforms below!
           </p>
@@ -22,27 +22,26 @@ const Contact = () => {
 
         {/* Right Side - Contact Form */}
         <div className="md:w-1/2">
-          <h3 className="text-2xl font-semibold text-blue-400 mb-6">Send a Message</h3>
-          <form action="https://formspree.io/f/xzbldjwk" method="POST" className="space-y-6">
+          <h3 className="text-2xl font-semibold text-purple-400 mb-6">Send a Message</h3>
+          <form name="contact" method="POST" data-netlify="true" className="space-y-4">
+            <input type="hidden" name="form-name" value="contact" />
+            
             <div>
-              <label htmlFor="name" className="block mb-1">Name</label>
-              <input type="text" id="name" name="name" required
-                className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+              <label className="text-sm text-white">Title | Name</label>
+              <input type="text" name="name" required className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white ring-2 ring-stone-500 focus:outline-none focus:ring-purple-600" />
             </div>
+            
             <div>
-              <label htmlFor="email" className="block mb-1">Email</label>
-              <input type="email" id="email" name="email" required
-                className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+              <label className="text-sm text-white">Your Email</label>
+              <input type="email" name="email" required className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white ring-2 ring-stone-500 focus:outline-none focus:ring-purple-600" />
             </div>
+
             <div>
-              <label htmlFor="message" className="block mb-1">Message</label>
-              <textarea id="message" name="message" rows="5" required
-                className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
+              <label className="text-sm text-white">Your Message</label>
+              <textarea name="message" rows="4" required className="w-full px-4 py-2 rounded bg-[#1a1a1a] text-white ring-2 ring-stone-500 focus:outline-none focus:ring-purple-600"></textarea>
             </div>
-            <button type="submit" className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded font-semibold">
+
+            <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">
               Send Message
             </button>
           </form>
