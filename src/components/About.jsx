@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-15 text-white flex flex-col items-center bg-zinc-950/80 backdrop-blur-md"
+      className="min-h-screen px-6 py-16 text-white flex flex-col items-center bg-zinc-950/80 backdrop-blur-md"
     >
       {/* Section Title with underline */}
       <div className="text-center mb-16">

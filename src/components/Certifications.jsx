@@ -55,7 +55,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section className="max-w-7xl mx-auto pb-12 px-4 md:px-20 mt-24" id="certifications">
+    <section className="min-h-screen max-w-7xl mx-auto pb-12 px-4 md:px-20 mt-24 scroll-mt-24" id="certificates">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-bold mb-4">Certifications</h2>
         <div className="h-1 w-55 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full mt-2 mx-auto" />
