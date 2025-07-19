@@ -1,6 +1,9 @@
 import { MapPin, Phone, Mail, GithubIcon, LinkedinIcon } from 'lucide-react';
 
 const Contact = () => {
+
+  const WEB3FORM_KEY = import.meta.env.VITE_WEB3FORM_KEY;
+
   return (
     <section id="contact" className="py-15 px-4 text-white bg-[#0f0f0f]">
       <div className="text-center mb-12">
@@ -71,9 +74,17 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="bg-[#1a1a1a] p-8 rounded-2xl ring-1 ring-purple-500 shadow-md">
           <h3 className="text-2xl font-semibold text-purple-400 mb-6">📨 Send a Message</h3>
-          <form name="contact" method="POST" data-netlify="true" className="space-y-5" netlify>
-            <input type="hidden" name="form-name" value="contact" />
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            className="space-y-5"
+          >
+            {/* Hidden inputs */}
+            <input type="hidden" name="access_key" value={WEB3FORM_KEY} />
+            <input type="hidden" name="subject" value="New Submission from Portfolio Contact Form" />
+            <input type="hidden" name="redirect" value="https://sarvampatel.netlify.app/thankyou" />
 
+            {/* User fields */}
             <div>
               <label className="text-sm text-gray-300">Your Name</label>
               <input
