@@ -82,8 +82,6 @@ const Contact = () => {
             {/* Hidden inputs */}
             <input type="hidden" name="access_key" value={WEB3FORM_KEY} />
             <input type="hidden" name="subject" value="New Submission from Portfolio Contact Form" />
-            <input type="hidden" name="redirect" value="https://sarvampatel.netlify.app/thankyou" />
-
             {/* User fields */}
             <div>
               <label className="text-sm text-gray-300">Your Name</label>
