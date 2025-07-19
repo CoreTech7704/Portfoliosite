@@ -32,7 +32,7 @@ const ProjectCard = () => {
       title: "TextUtils",
       description: "A simple React-based text editor with light/dark mode and text manipulation tools.",
       techStack: ["React", "HTML", "JavaScript", "Tailwind CSS"],
-      url: "https://textutils-fast.netlify.app/",
+      url: "https://github.com/CoreTech7704/TextUtils",
       image: TextUtilsImage,
       goals:
         "A powerful text utility tool built with React for performing transformations like case conversion, word/character count, and copy/clear functions. Includes a toggleable light/dark mode and responsive design using Tailwind CSS.",
@@ -42,7 +42,7 @@ const ProjectCard = () => {
       title: "DES Algorithm Visualizer",
       description: "A pure C language project that explains the DES encryption algorithm.",
       techStack: ["C"],
-      url: "https://coretech7704.github.io/DES-Algorithm/",
+      url: "https://github.com/CoreTech7704/DES_Algorithem",
       image: DESImage,
       goals:
         "A C-based simulation of the Data Encryption Standard (DES) algorithm, showcasing key scheduling, permutation tables, and block-level encryption steps ideal for understanding low-level cryptographic logic and bitwise operations.",
@@ -52,7 +52,7 @@ const ProjectCard = () => {
       title: "Pari Travel Agency",
       description: "A basic responsive business website made for a real travel agency client.",
       techStack: ["HTML", "CSS", "JavaScript"],
-      url: "#",
+      url: "https://github.com/CoreTech7704/Pari-Agency",
       image: PariAgencyImage,
       goals:
         "A fully responsive static website created for a real-world travel agency client. Features a custom UI, multi-section layout, and working contact form developed using only HTML, CSS, and vanilla JavaScript.",
