@@ -71,7 +71,7 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="bg-[#1a1a1a] p-8 rounded-2xl ring-1 ring-purple-500 shadow-md">
           <h3 className="text-2xl font-semibold text-purple-400 mb-6">📨 Send a Message</h3>
-          <form name="contact" method="POST" data-netlify="true" className="space-y-5">
+          <form name="contact" method="POST" data-netlify="true" className="space-y-5" netlify>
             <input type="hidden" name="form-name" value="contact" />
 
             <div>
