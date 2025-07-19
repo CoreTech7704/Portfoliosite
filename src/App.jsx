@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home.jsx";
+import Home from "./Pages/Home.jsx";
 
 function App() {
   return (
