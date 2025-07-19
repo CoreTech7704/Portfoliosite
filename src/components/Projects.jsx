@@ -109,7 +109,7 @@ const ProjectCard = () => {
                 <img
                   src={project.image}
                   alt={`${project.title} Screenshot`}
-                  className="w-full h-auto lg:h-auto object-cover transition duration-500 lg:group-hover:blur-sm"
+                  className="w-full h-auto lg:h-110 object-cover transition duration-500 lg:group-hover:blur-sm"
                 />
 
                 {/* Hover Description - only for desktop */}
