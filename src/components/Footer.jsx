@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-white">Sarvam Patel</h4>
           <p className="mt-2">
-            Passionate web developer who loves building <span className="text-purple-400 font-semibold">fast</span> and <span className="text-purple-400 font-semibold">accessible</span> digital products.
+            Passionate web developer who loves building <span className="text-purple-500 font-semibold">fast</span> and <span className="text-purple-500 font-semibold">accessible</span> digital products.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const Footer = () => {
               href="https://www.rammaheshwari.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:underline"
+              className="text-purple-500 underline"
             >
               Ram Maheshwari
             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom © line */}
-      <p className="mt-4 text-center text-xs text-gray-400">
+      <p className="mt-4 text-center text-xs text-gray-300">
         © Copyright {new Date().getFullYear()}. Made by Sarvam Patel.
       </p>
     </footer>
