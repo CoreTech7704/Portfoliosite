@@ -34,6 +34,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
+          aria-label="Open navigation menu"
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden text-white p-2 rounded hover:bg-white/10 transition"
         >

@@ -27,13 +27,14 @@ const Hero = () => {
     </h1>
 
     <p className="max-w-xl text-lg md:text-xl text-gray-300 mb-8">
-      <span className="text-purple-400">Web Developer</span> who{" "}
-      <span className="text-purple-400">enjoys</span> building{" "}
-      <span className="text-purple-400">fast</span> and{" "}
-      <span className="text-purple-400">accessible</span> digital products.
+      <span className="text-purple-500 font-semibold">Web Developer</span> who{" "}
+      <span className="text-purple-500 font-semibold">enjoys</span> building{" "}
+      <span className="text-purple-500 font-semibold">fast</span> and{" "}
+      <span className="text-purple-500 font-semibold">accessible</span> digital products.
     </p>
 
     <a
+      aria-label="Aboutme"
       href="#about"
       className="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transform transition-transform duration-200 ease-out hover:-translate-y-1"
     >

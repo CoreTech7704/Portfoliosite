@@ -66,7 +66,7 @@ const Certifications = () => {
             key={cert.id}
             className="bg-zinc-900 p-6 rounded-xl border border-purple-700 hover:shadow-purple-500/20 hover:shadow-lg transition"
           >
-            <h3 className="text-xl font-semibold text-purple-400 mb-1">
+            <h3 className="text-xl font-bold text-purple-500 mb-1">
               {cert.title}
             </h3>
             <p className="text-gray-300">{cert.issuer}</p>

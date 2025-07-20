@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Contact Info */}
         <div className="space-y-6 bg-[#1a1a1a] p-8 rounded-2xl ring-1 ring-purple-500 shadow-md">
-            <h3 className="text-2xl font-semibold text-purple-400">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-purple-500">Contact Information</h3>
               <p className="text-gray-300">
                 Feel free to reach out through any of the platforms below!
               </p>
@@ -73,7 +73,7 @@ const Contact = () => {
 
         {/* Contact Form */}
         <div className="bg-[#1a1a1a] p-8 rounded-2xl ring-1 ring-purple-500 shadow-md">
-          <h3 className="text-2xl font-semibold text-purple-400 mb-6">📨 Send a Message</h3>
+          <h3 className="text-2xl font-semibold text-purple-500 mb-6">Send a Message</h3>
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
@@ -114,6 +114,7 @@ const Contact = () => {
             </div>
 
             <button
+              aria-label="Form submit"
               type="submit"
               className="w-full bg-purple-600 hover:bg-purple-700 transition duration-200 text-white py-2 px-6 rounded-md font-semibold"
             >

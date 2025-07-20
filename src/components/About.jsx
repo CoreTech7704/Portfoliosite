@@ -25,17 +25,18 @@ const About = () => {
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left side */}
         <div>
-          <h3 className="text-3xl mb-2 font-semibold text-purple-400">
+          <h3 className="text-3xl mb-2 font-semibold text-purple-500">
             Get to know me better
           </h3>
           <p className="text-gray-300 mb-6 text-lg md:text-xl leading-relaxed">
-            I'm <span className="font-bold text-white">Sarvam Patel</span>, a front-end web developer passionate about creating fast, responsive, and accessible websites. I specialize in building user-friendly digital experiences using modern technologies like <span className="text-purple-400">React</span>, <span className="text-purple-400">JavaScript</span>, and <span className="text-purple-400">Tailwind CSS</span>.
+            I'm <span className="font-bold text-white">Sarvam Patel</span>, a front-end web developer passionate about creating fast, responsive, and accessible websites. I specialize in building user-friendly digital experiences using modern technologies like <span className="text-purple-500">React</span>, <span className="text-purple-500">JavaScript</span>, and <span className="text-purple-500">Tailwind CSS</span>.
             <br /><br />
             I enjoy solving real-world problems through clean and efficient code, turning ideas into functional products. My projects reflect my commitment to performance, design, and scalability.
             <br /><br />
-            I'm actively seeking <span className="text-purple-400 font-medium">job opportunities</span> where I can grow, collaborate, and contribute to impactful teams. If you’re hiring or know of a good fit, feel free to <a href="#contact" className="underline text-purple-400 hover:text-purple-500">reach out</a>.
+            I'm actively seeking <span className="text-purple-500 font-medium">job opportunities</span> where I can grow, collaborate, and contribute to impactful teams. If you’re hiring or know of a good fit, feel free to <a href="#contact" className="underline text-blue-500 hover:text-blue-600">reach out</a>.
           </p>
           <a
+            aria-label="Projects"
             href="#projects"
             className="inline-block px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-md transform transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg"
           >
@@ -45,7 +46,7 @@ const About = () => {
 
         {/* Right side - Skills + Soft Skills */}
         <div>
-          <h3 className="text-3xl font-semibold text-purple-400 mb-4">My Toolkit</h3>
+          <h3 className="text-3xl font-semibold text-purple-500 mb-4">My Toolkit</h3>
           <div className="flex flex-wrap gap-3 mb-8">
             {skills.map((skill, index) => (
               <span
@@ -57,12 +58,12 @@ const About = () => {
             ))}
           </div>
 
-          <h4 className="text-2xl font-semibold text-purple-400 mb-3">Soft Skills</h4>
+          <h4 className="text-2xl font-semibold text-purple-500 mb-3">Soft Skills</h4>
           <div className="flex flex-wrap gap-3">
             {softSkills.map((skill, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-zinc-800 text-white rounded-full border border-purple-500 text-sm"
+                className="px-4 py-2 bg-zinc-800 text-white rounded-full border border-purple-500 text-sm hover:shadow-[0_0_10px_#a855f7] transition text-m"
               >
                 {skill}
               </span>

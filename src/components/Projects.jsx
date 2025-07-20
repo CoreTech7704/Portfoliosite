@@ -22,7 +22,7 @@ const ProjectCard = () => {
       title: "Snap News",
       description: "A Bootstrap-based news website featuring real-time API data and category-wise sorting.",
       techStack: ["React", "Bootstrap", "HTML", "JavaScript", "GNews API"],
-      url: "https://snapnews-bootstrap.netlify.app/",
+      url: "https://github.com/CoreTech7704/newsapp",
       image: SnapNewsImage,
       goals:
         "A lightweight news platform developed using React and Bootstrap. It integrates GNews API to fetch real-time news updates and features category-based filtering, laying the foundation for understanding API handling and responsive design.",
@@ -78,7 +78,7 @@ const ProjectCard = () => {
               {/* Left */}
               <div className="w-full lg:w-1/3 p-6 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-4xl font-bold text-purple-400 mb-2">
+                  <h3 className="text-4xl font-bold text-purple-500 mb-2">
                     {project.title}
                   </h3>
                   <p className="text-lg text-gray-300 mb-4">{project.description}</p>
@@ -94,6 +94,7 @@ const ProjectCard = () => {
                   </div>
                 </div>
                 <a
+                  aria-label="Links for project"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
