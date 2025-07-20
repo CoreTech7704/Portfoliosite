@@ -1,9 +1,9 @@
 import { ArrowRight } from "lucide-react";
-import SwiftNewsImage from "../assets/Swiftnews.png";
-import SnapNewsImage from "../assets/snapnews.png";
-import TextUtilsImage from "../assets/Textutils.png";
-import DESImage from "../assets/DES.png";
-import PariAgencyImage from "../assets/Pariagency.png";
+import SwiftNewsImage from "../assets/Swiftnews.webp";
+import SnapNewsImage from "../assets/snapnews.webp";
+import TextUtilsImage from "../assets/Textutils.webp";
+import DESImage from "../assets/DES.webp";
+import PariAgencyImage from "../assets/Pariagency.webp";
 
 const ProjectCard = () => {
   const projects = [
