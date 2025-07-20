@@ -33,11 +33,11 @@ const Footer = () => {
         {/* Right - Social Links */}
         <div className="flex flex-col items-start md:items-end">
           <h4 className="font-bold text-white">Social</h4>
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-2" aria-label="Github">
             <a href="https://github.com/CoreTech7704" target="_blank" rel="noopener noreferrer">
               <Github className="hover:text-purple-400" />
             </a>
-            <a href="https://linkedin.com/in/sarvam-patel" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/sarvam-patel" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
               <Linkedin className="hover:text-purple-400" />
             </a>
           </div>
