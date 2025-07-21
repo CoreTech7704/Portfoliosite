@@ -28,12 +28,19 @@ const About = () => {
           <h3 className="text-3xl mb-2 font-semibold text-purple-500">
             Get to know me better
           </h3>
-          <p className="text-gray-300 mb-6 text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
             I'm <span className="font-bold text-white">Sarvam Patel</span>, a front-end web developer passionate about creating fast, responsive, and accessible websites. I specialize in building user-friendly digital experiences using modern technologies like <span className="text-purple-500">React</span>, <span className="text-purple-500">JavaScript</span>, and <span className="text-purple-500">Tailwind CSS</span>.
-            <br /><br />
+            <br />
             I enjoy solving real-world problems through clean and efficient code, turning ideas into functional products. My projects reflect my commitment to performance, design, and scalability.
-            <br /><br />
+            <br />
             I'm actively seeking <span className="text-purple-500 font-medium">job opportunities</span> where I can grow, collaborate, and contribute to impactful teams. If you’re hiring or know of a good fit, feel free to <a href="#contact" className="underline text-blue-500 hover:text-blue-600">reach out</a>.
+          </p>
+          <p className="my-4 text-base text-gray-300">
+            <span className="inline-flex items-center gap-1">
+              <span role="img" aria-label="globe">🌐</span>
+              <strong>Languages:</strong>
+            </span>{' '}
+            Gujarati (Native), Hindi (Fluent), English (Fluent)
           </p>
           <a
             aria-label="Projects"
