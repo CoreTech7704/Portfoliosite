@@ -26,12 +26,13 @@ const Hero = () => {
       Hey, I'm Sarvam
     </h1>
 
-    <p className="max-w-xl text-lg md:text-xl text-gray-300 mb-8">
-      <span className="text-purple-500 font-semibold">Web Developer</span> who{" "}
-      <span className="text-purple-500 font-semibold">enjoys</span> building{" "}
-      <span className="text-purple-500 font-semibold">fast</span> and{" "}
-      <span className="text-purple-500 font-semibold">accessible</span> digital products.
-    </p>
+<p className="max-w-xl text-lg md:text-xl text-gray-300 mb-8">
+  <span className="text-purple-500 font-semibold">Full Stack MERN Developer</span>{" "}
+  passionate about building{" "}
+  <span className="text-purple-500 font-semibold">fast</span>,{" "}
+  <span className="text-purple-500 font-semibold">scalable</span>, and{" "}
+  <span className="text-purple-500 font-semibold">seamless</span> web applications.
+</p>
 
     <a
       aria-label="Aboutme"

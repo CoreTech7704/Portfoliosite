@@ -4,21 +4,32 @@ import SnapNewsImage from "../assets/snapnews.webp";
 import TextUtilsImage from "../assets/Textutils.webp";
 import DESImage from "../assets/DES.webp";
 import PariAgencyImage from "../assets/Pariagency.webp";
+import URLShortenerImage from "../assets/URL-shortner.webp";
 
 const ProjectCard = () => {
   const projects = [
-    {
+      {
       id: 1,
+      title: "URL Shortener",
+      description: "URL shortener with unique ID generation, redirection and click-tracking using Node.js, Express, and MongoDB.",
+      techStack: ["Node.js", "Tailwind CSS", "EJS", "Express.js", "MongoDB"],
+      url: "https://github.com/CoreTech7704/URL-Shortener",
+      image: URLShortenerImage,
+      goals:
+        "A full-stack URL shortening service built with Node.js and Express.js. It features unique ID generation, redirection, and click-tracking functionalities, all styled with Tailwind CSS and EJS templating, and uses MongoDB for data storage.",
+    },
+    {
+      id: 2,
       title: "Swift News",
       description: "A modern React-based news app with live data and category filtering.",
       techStack: ["React", "Tailwind CSS", "HTML", "JavaScript", "GNews API"],
-      url: "https://swiftnews.netlify.app/",
+      url: "https://github.com/CoreTech7704/swiftnews",
       image: SwiftNewsImage,
       goals:
         "A dynamic and responsive news application built with React and Tailwind CSS. It fetches real-time headlines from GNews API and allows users to filter news by category with smooth transitions and a clean dark UI.",
     },
     {
-      id: 2,
+      id: 3,
       title: "Snap News",
       description: "A Bootstrap-based news website featuring real-time API data and category-wise sorting.",
       techStack: ["React", "Bootstrap", "HTML", "JavaScript", "GNews API"],
@@ -28,7 +39,7 @@ const ProjectCard = () => {
         "A lightweight news platform developed using React and Bootstrap. It integrates GNews API to fetch real-time news updates and features category-based filtering, laying the foundation for understanding API handling and responsive design.",
     },
     {
-      id: 3,
+      id: 4,
       title: "TextUtils",
       description: "A simple React-based text editor with light/dark mode and text manipulation tools.",
       techStack: ["React", "HTML", "JavaScript", "Tailwind CSS"],
@@ -38,7 +49,7 @@ const ProjectCard = () => {
         "A powerful text utility tool built with React for performing transformations like case conversion, word/character count, and copy/clear functions. Includes a toggleable light/dark mode and responsive design using Tailwind CSS.",
     },
     {
-      id: 4,
+      id: 5,
       title: "DES Algorithm Visualizer",
       description: "A pure C language project that explains the DES encryption algorithm.",
       techStack: ["C"],
@@ -48,7 +59,7 @@ const ProjectCard = () => {
         "A C-based simulation of the Data Encryption Standard (DES) algorithm, showcasing key scheduling, permutation tables, and block-level encryption steps ideal for understanding low-level cryptographic logic and bitwise operations.",
     },
     {
-      id: 5,
+      id: 6,
       title: "Pari Travel Agency",
       description: "A basic responsive business website made for a real travel agency client.",
       techStack: ["HTML", "CSS", "JavaScript"],
