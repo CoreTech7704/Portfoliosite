@@ -1,14 +1,34 @@
 const About = () => {
-  const skills = [
-    "HTML", "CSS", "JavaScript", "PHP", "SQL", "React", "Vite", "Tailwind CSS",
-    "Java", "C", "Node.js", "SEO", "C++", "API", "Python", "Git", "GitHub", "Bootstrap"
-  ];
+const skills = [
+  // Frontend
+  "HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS",
+  "Bootstrap", "EJS",
 
-  const softSkills = [
-  "Leadership", "Decision Making", "Problem Solving", "Time Management",
-  "Adaptability", "Creativity", "Self-Motivation", "Communication", "Resilience", "Strategic Thinking"
-  ];
+  // Backend / Full Stack
+  "Node.js", "Express.js", "RESTful APIs", "MERN Stack",
 
+  // Databases
+  "MongoDB", "SQL",
+
+  // Programming Languages
+  "Java", "C", "C++", "Python", "PHP",
+
+  // Tools & Others
+  "Git", "GitHub", "SEO"
+];
+
+const softSkills = [
+  "Leadership",
+  "Decision Making",
+  "Problem Solving",
+  "Time Management",
+  "Adaptability",
+  "Creativity",
+  "Self-Motivation",
+  "Communication",
+  "Resilience",
+  "Strategic Thinking"
+];
 
   return (
     <section
@@ -29,19 +49,47 @@ const About = () => {
             Get to know me better
           </h3>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-            I'm <span className="font-bold text-white">Sarvam Patel</span>, a front-end web developer passionate about creating fast, responsive, and accessible websites. I specialize in building user-friendly digital experiences using modern technologies like <span className="text-purple-500">React</span>, <span className="text-purple-500">JavaScript</span>, and <span className="text-purple-500">Tailwind CSS</span>.
+            I'm <span className="font-bold text-white">Sarvam Patel</span>, a
+            Full satck (MERN) developer who enjoys building fast, scalable, and
+            user-focused web applications. I work with technologies like
+            <span className="text-purple-500">React</span>,
+            <span className="text-purple-500">Node.js</span>,
+            <span className="text-purple-500">Express</span>, and
+            <span className="text-purple-500">MongoDB</span> to turn ideas into
+            functional and reliable digital products.
             <br />
-            I enjoy solving real-world problems through clean and efficient code, turning ideas into functional products. My projects reflect my commitment to performance, design, and scalability.
+            I love solving real problems through clean architecture, smooth
+            UI/UX, and optimized performance. Whether it's a frontend interface
+            or a full-stack workflow, I aim to create seamless experiences that
+            feel fast and intuitive.
             <br />
-            I'm actively seeking <span className="text-purple-500 font-medium">job opportunities</span> where I can grow, collaborate, and contribute to impactful teams. If you’re hiring or know of a good fit, feel free to <a href="#contact" className="underline text-blue-500 hover:text-blue-600">reach out</a>.
+            I'm actively looking for{" "}
+            <span className="text-purple-500 font-medium">
+              internship opportunities
+            </span>{" "}
+            where I can contribute, learn from experienced developers, and grow
+            within a collaborative team. If you think I could be a good fit,
+            feel free to
+            <a
+              href="#contact"
+              className="underline text-blue-500 hover:text-blue-600"
+            >
+              {" "}
+              get in touch
+            </a>
+            .
           </p>
+
           <p className="my-4 text-base text-gray-300">
             <span className="inline-flex items-center gap-1">
-              <span role="img" aria-label="globe">🌐</span>
+              <span role="img" aria-label="globe">
+                🌐
+              </span>
               <strong>Languages:</strong>
-            </span>{' '}
+            </span>{" "}
             Gujarati (Native), Hindi (Fluent), English (Fluent)
           </p>
+
           <a
             aria-label="Projects"
             href="#projects"
@@ -53,7 +101,9 @@ const About = () => {
 
         {/* Right side - Skills + Soft Skills */}
         <div>
-          <h3 className="text-3xl font-semibold text-purple-500 mb-4">My Toolkit</h3>
+          <h3 className="text-3xl font-semibold text-purple-500 mb-4">
+            My Toolkit
+          </h3>
           <div className="flex flex-wrap gap-3 mb-8">
             {skills.map((skill, index) => (
               <span
@@ -65,7 +115,9 @@ const About = () => {
             ))}
           </div>
 
-          <h4 className="text-2xl font-semibold text-purple-500 mb-3">Soft Skills</h4>
+          <h4 className="text-2xl font-semibold text-purple-500 mb-3">
+            Soft Skills
+          </h4>
           <div className="flex flex-wrap gap-3">
             {softSkills.map((skill, index) => (
               <span
