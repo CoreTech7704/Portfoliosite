@@ -5,13 +5,34 @@ import TextUtilsImage from "../assets/Textutils.webp";
 import DESImage from "../assets/DES.webp";
 import PariAgencyImage from "../assets/Pariagency.webp";
 import URLShortenerImage from "../assets/URL-shortner.webp";
+import VoidWorkImage from "../assets/voidwork.webp";
 
 const ProjectCard = () => {
   const projects = [
-      {
+    {
       id: 1,
+      title: "VOIDWORK",
+      description:
+        "A full-stack blogging platform built during my internship project.",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Redis",
+        "Cloudinary",
+      ],
+      url: "https://github.com/yourusername/voidwork",
+      image: VoidWorkImage,
+      goals:
+        "A scalable full-stack blogging platform featuring JWT authentication, role-based access control, blog CRUD operations, markdown content support, category filtering, search functionality, Redis caching, Cloudinary media uploads, user dashboards, and responsive UI design. Built as the major internship project to apply real-world frontend, backend, database, authentication, caching, and deployment concepts.",
+    },
+    {
+      id: 2,
       title: "URL Shortener",
-      description: "URL shortener with unique ID generation, redirection and click-tracking using Node.js, Express, and MongoDB.",
+      description:
+        "URL shortener with unique ID generation, redirection and click-tracking using Node.js, Express, and MongoDB.",
       techStack: ["Node.js", "Tailwind CSS", "EJS", "Express.js", "MongoDB"],
       url: "https://github.com/CoreTech7704/URL-Shortener",
       image: URLShortenerImage,
@@ -19,9 +40,10 @@ const ProjectCard = () => {
         "A full-stack URL shortening service built with Node.js and Express.js. It features unique ID generation, redirection, and click-tracking functionalities, all styled with Tailwind CSS and EJS templating, and uses MongoDB for data storage.",
     },
     {
-      id: 2,
+      id: 3,
       title: "Swift News",
-      description: "A modern React-based news app with live data and category filtering.",
+      description:
+        "A modern React-based news app with live data and category filtering.",
       techStack: ["React", "Tailwind CSS", "HTML", "JavaScript", "GNews API"],
       url: "https://github.com/CoreTech7704/swiftnews",
       image: SwiftNewsImage,
@@ -29,9 +51,10 @@ const ProjectCard = () => {
         "A dynamic and responsive news application built with React and Tailwind CSS. It fetches real-time headlines from GNews API and allows users to filter news by category with smooth transitions and a clean dark UI.",
     },
     {
-      id: 3,
+      id: 4,
       title: "Snap News",
-      description: "A Bootstrap-based news website featuring real-time API data and category-wise sorting.",
+      description:
+        "A Bootstrap-based news website featuring real-time API data and category-wise sorting.",
       techStack: ["React", "Bootstrap", "HTML", "JavaScript", "GNews API"],
       url: "https://github.com/CoreTech7704/newsapp",
       image: SnapNewsImage,
@@ -39,9 +62,10 @@ const ProjectCard = () => {
         "A lightweight news platform developed using React and Bootstrap. It integrates GNews API to fetch real-time news updates and features category-based filtering, laying the foundation for understanding API handling and responsive design.",
     },
     {
-      id: 4,
+      id: 5,
       title: "TextUtils",
-      description: "A simple React-based text editor with light/dark mode and text manipulation tools.",
+      description:
+        "A simple React-based text editor with light/dark mode and text manipulation tools.",
       techStack: ["React", "HTML", "JavaScript", "Tailwind CSS"],
       url: "https://github.com/CoreTech7704/TextUtils",
       image: TextUtilsImage,
@@ -49,9 +73,10 @@ const ProjectCard = () => {
         "A powerful text utility tool built with React for performing transformations like case conversion, word/character count, and copy/clear functions. Includes a toggleable light/dark mode and responsive design using Tailwind CSS.",
     },
     {
-      id: 5,
+      id: 6,
       title: "DES Algorithm Visualizer",
-      description: "A pure C language project that explains the DES encryption algorithm.",
+      description:
+        "A pure C language project that explains the DES encryption algorithm.",
       techStack: ["C"],
       url: "https://github.com/CoreTech7704/DES_Algorithem",
       image: DESImage,
@@ -59,9 +84,10 @@ const ProjectCard = () => {
         "A C-based simulation of the Data Encryption Standard (DES) algorithm, showcasing key scheduling, permutation tables, and block-level encryption steps ideal for understanding low-level cryptographic logic and bitwise operations.",
     },
     {
-      id: 6,
+      id: 7,
       title: "Pari Travel Agency",
-      description: "A basic responsive business website made for a real travel agency client.",
+      description:
+        "A basic responsive business website made for a real travel agency client.",
       techStack: ["HTML", "CSS", "JavaScript"],
       url: "https://github.com/CoreTech7704/Pari-Agency",
       image: PariAgencyImage,
@@ -92,7 +118,9 @@ const ProjectCard = () => {
                   <h3 className="text-4xl font-bold text-purple-500 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-lg text-gray-300 mb-4">{project.description}</p>
+                  <p className="text-lg text-gray-300 mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.techStack.map((tech, i) => (
                       <span
@@ -129,7 +157,9 @@ const ProjectCard = () => {
                   <h4 className="text-3xl font-semibold text-purple-300 mb-2">
                     Description & Goals
                   </h4>
-                  <p className="text-gray-300 text-lg leading-relaxed">{project.goals}</p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    {project.goals}
+                  </p>
                 </div>
 
                 {/* Static Description - only for mobile */}
@@ -137,7 +167,9 @@ const ProjectCard = () => {
                   <h4 className="text-xl font-semibold text-purple-400 mb-2">
                     Description & Goals
                   </h4>
-                  <p className="text-gray-300 text-base leading-relaxed">{project.goals}</p>
+                  <p className="text-gray-300 text-base leading-relaxed">
+                    {project.goals}
+                  </p>
                 </div>
               </div>
             </div>
