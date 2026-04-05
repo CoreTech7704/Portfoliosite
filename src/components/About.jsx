@@ -1,34 +1,34 @@
 const About = () => {
-const skills = [
-  // Frontend
-  "HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS",
-  "Bootstrap", "EJS",
+  const skills = [
+    // Frontend
+    "HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS",
+    "Bootstrap", "EJS",
 
-  // Backend / Full Stack
-  "Node.js", "Express.js", "RESTful APIs", "MERN Stack",
+    // Backend / Full Stack
+    "Node.js", "Express.js", "RESTful APIs", "MERN Stack",
 
-  // Databases
-  "MongoDB", "SQL",
+    // Databases
+    "MongoDB", "SQL",
 
-  // Programming Languages
-  "Java", "C", "C++", "Python", "PHP",
+    // Programming Languages
+    "Java", "C", "C++", "Python", "PHP",
 
-  // Tools & Others
-  "Git", "GitHub", "SEO"
-];
+    // Tools & Others
+    "Git", "GitHub", "SEO", "JWT", "Redis", "Cloudinary",
+  ];
 
-const softSkills = [
-  "Leadership",
-  "Decision Making",
-  "Problem Solving",
-  "Time Management",
-  "Adaptability",
-  "Creativity",
-  "Self-Motivation",
-  "Communication",
-  "Resilience",
-  "Strategic Thinking"
-];
+  const softSkills = [
+    "Leadership",
+    "Decision Making",
+    "Problem Solving",
+    "Time Management",
+    "Adaptability",
+    "Creativity",
+    "Self-Motivation",
+    "Communication",
+    "Resilience",
+    "Strategic Thinking"
+  ];
 
   return (
     <section
@@ -51,11 +51,11 @@ const softSkills = [
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
             I'm <span className="font-bold text-white">Sarvam Patel</span>, a
             Full satck (MERN) developer who enjoys building fast, scalable, and
-            user-focused web applications. I work with technologies like
-            <span className="text-purple-500">React</span>,
+            user-focused web applications. I work with technologies like 
+            <span className="text-purple-500"> React</span>,
             <span className="text-purple-500">Node.js</span>,
             <span className="text-purple-500">Express</span>, and
-            <span className="text-purple-500">MongoDB</span> to turn ideas into
+            <span className="text-purple-500"> MongoDB</span> to turn ideas into
             functional and reliable digital products.
             <br />
             I love solving real problems through clean architecture, smooth
@@ -65,7 +65,7 @@ const softSkills = [
             <br />
             I'm actively looking for{" "}
             <span className="text-purple-500 font-medium">
-              internship opportunities
+              opportunities
             </span>{" "}
             where I can contribute, learn from experienced developers, and grow
             within a collaborative team. If you think I could be a good fit,

@@ -43,9 +43,7 @@ const Contact = () => {
                   <Mail size={18} className="mt-1 text-purple-500" />
                   <div>
                     <span className="font-semibold text-white">Email</span><br />
-                    <a href="mailto:sarvampatel953@gmail.com" className="hover:underline text-blue-400">
                       sarvampatel953@gmail.com
-                    </a>
                   </div>
                 </div>
 
